@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
                 Av. Laert José Tarallo Mendes, 891 - Sala 2 <br/>
                 Vila Ferroviária, Araraquara - SP, 14802-315
                 </p>
-                <p className="mb-1"><span className="font-semibold">Telefone:</span> (16) 99999-9999</p>
+                <p className="mb-1"><span className="font-semibold">Telefone:</span>(16) 99602-0528</p>
                 <p><span className="font-semibold">Email:</span> contato@damhacoworking.com.br</p>
                  <a 
                   href="https://maps.app.goo.gl/GPHJ4evMgDNYdiyV9"
