@@ -3,22 +3,22 @@ import React from 'react';
 import { WifiIcon, CoffeeIcon, AirConditionerIcon } from './Icons';
 
 const FeatureCard: React.FC<{ icon: React.ReactNode; title: string; description: string }> = ({ icon, title, description }) => (
-  <div className="bg-white p-6 rounded-lg shadow-sm text-center transform hover:-translate-y-2 transition-transform duration-300">
-    <div className="flex justify-center items-center mb-4 text-[#7A9E91]">
+  <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl text-center transform hover:-translate-y-2 transition-all duration-300 border border-[#F7F3EF]">
+    <div className="flex justify-center items-center mb-5 text-[#5B8573]">
       {icon}
     </div>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+    <h3 className="text-xl font-bold mb-3 text-[#2D3436]">{title}</h3>
+    <p className="text-[#636E72] leading-relaxed">{description}</p>
   </div>
 );
 
 const About: React.FC = () => {
   return (
-    <section id="sobre" className="py-20 bg-[#F5F1ED]">
+    <section id="sobre" className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#4A4A4A]">Um Espaço Pensado para Profissionais</h2>
-          <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#2D3436] mb-4">Um Espaço Pensado para Profissionais</h2>
+          <p className="text-xl text-[#636E72] mt-4 max-w-2xl mx-auto leading-relaxed">
             Oferecemos um ambiente moderno, climatizado e totalmente equipado para profissionais da saúde, estética e bem-estar.
           </p>
         </div>

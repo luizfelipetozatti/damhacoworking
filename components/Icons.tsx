@@ -7,23 +7,35 @@ interface IconProps {
 
 export const WifiIcon: React.FC<IconProps> = ({ className = 'w-6 h-6' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.562a4.5 4.5 0 017.778 0M12 20.25a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75v-.008z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4.875 12.125c2.687-2.688 6.562-2.688 9.25 0M12 15.75a3 3 0 013-3h.008a3 3 0 013 3v.008a3 3 0 01-3 3H12a3 3 0 01-3-3v-.008z" />
+    {/* Ondas de Wi-Fi - 3 arcos concêntricos */}
+    <path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.094a5 5 0 017.778 0" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4.929 12.929a10 10 0 0114.142 0" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M1.757 9.757a15 15 0 0120.486 0" />
+    {/* Ponto central do Wi-Fi */}
+    <circle cx="12" cy="19" r="1.5" fill="currentColor" />
   </svg>
 );
 
 export const CoffeeIcon: React.FC<IconProps> = ({ className = 'w-6 h-6' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 8v-1a4 4 0 00-4-4H9a4 4 0 00-4 4v8a4 4 0 004 4h2a4 4 0 004-4v-3h-1" />
+    {/* Xícara de café */}
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4 8h12a2 2 0 012 2v6a4 4 0 01-4 4H8a4 4 0 01-4-4V8z" />
+    {/* Alça da xícara */}
+    <path strokeLinecap="round" strokeLinejoin="round" d="M16 10h2a2 2 0 012 2v1a2 2 0 01-2 2h-2" />
+    {/* Vapor subindo */}
+    <path strokeLinecap="round" strokeLinejoin="round" d="M7 3v3M11 2v4M15 3v3" />
   </svg>
 );
 
 export const AirConditionerIcon: React.FC<IconProps> = ({ className = 'w-6 h-6' }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 19.5L21 12" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 4.5L3 12" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    {/* Unidade do ar condicionado */}
+    <rect x="3" y="4" width="18" height="8" rx="1" strokeLinecap="round" strokeLinejoin="round" />
+    {/* Linhas de ventilação */}
+    <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h10M7 9h10" />
+    {/* Fluxo de ar frio - 3 linhas onduladas */}
+    <path strokeLinecap="round" strokeLinejoin="round" d="M7 14v3M12 13v5M17 14v3" />
+  </svg>
 );
 
 export const CalendarIcon: React.FC<IconProps> = ({ className = 'w-6 h-6' }) => (
